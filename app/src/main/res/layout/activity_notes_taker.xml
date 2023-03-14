@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakerActivity"
+    android:background="#E3DDDD"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notes"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_save"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_save"
+            android:padding="6dp"
+            android:background="@android:color/transparent"
+            android:layout_width="?attr/actionBarSize"
+
+            android:layout_height="?attr/actionBarSize"/>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название: "
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Текст: "
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    
+</LinearLayout>
